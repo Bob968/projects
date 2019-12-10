@@ -1,0 +1,73 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    background: url(https://images.unsplash.com/photo-1557682257-2f9c37a3a5f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=486&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container { 
+    margin: 200px auto;
+    background: #f7f7f7;
+    width: 360px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    background: violet;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: gray;
+}
+
+span {
+    display: inline-block;
+    background: red;
+    height: 40px;
+    margin-right: 40px;
+    color: white;
+    width: 0;
+    transition: 300ms linear;
+    text-align: center;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
+input {
+    height: 40px;
+    border: 0 none;
+    background: #f7f7f7;
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+}
+
+li:nth-child(2n){
+    background: #f7f7f7;
+}
